@@ -2734,11 +2734,6 @@ input[type="button"]:disabled,
 	margin: 0 0 2em 0;
 }
 
-#header>.inner h1 {
-	/* Blur the text under my profile photo */
-	backdrop-filter: blur(10px) saturate(70%);
-}
-
 #header strong,
 #header b {
 	color: #ffffff;
@@ -2769,10 +2764,11 @@ input[type="button"]:disabled,
 #footer>.inner {
 	/* Blur the text under my profile photo */
 	backdrop-filter: blur(10px) saturate(70%);
+	padding: 1em;
 }
 
 #footer .icons {
-	margin: 1em 0 0 0;
+	margin: 0.25em 1em 1em 1em;
 }
 
 #footer .icons a {
@@ -3126,12 +3122,25 @@ body.is-touch .poptrox-popup .closer {
 	/* Header */
 
 	#header {
-		padding: 6em 3em 3em 3em;
-		width: 30%;
+		/* top right bottom left */
+		padding: 6em 0 0 0;
+		width: 35%;
 	}
 
 	#header h1 {
-		font-size: 1.25em;
+		font-weight: 600;
+		font-size: 1.5rem;
+		padding: 0 1em 0 1em;
+	}
+
+	#header .name-box {
+		padding: 0.5em 0 1em 0;
+		backdrop-filter: blur(10px) saturate(70%);
+	}
+
+	#header h3 {
+		margin: 0;
+		padding: 0 1em 0 1em;
 	}
 
 	#header h1 br {
@@ -3140,6 +3149,15 @@ body.is-touch .poptrox-popup .closer {
 
 	#header>.inner {
 		margin-bottom: 0;
+	}
+
+	#header img {
+		height: 100px;
+		width: 100px;
+	}
+
+	#header .image.avatar {
+		margin-right: 3em;
 	}
 
 	/* Footer */
@@ -3155,7 +3173,7 @@ body.is-touch .poptrox-popup .closer {
 	/* Main */
 
 	#main {
-		margin-left: 30%;
+		margin-left: 35%;
 		max-width: none;
 		padding: 6em 3em 3em 3em;
 		width: calc(100% - 30%);
